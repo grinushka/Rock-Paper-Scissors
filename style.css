@@ -1,0 +1,8 @@
+body {
+    all: unset;
+    background-color: rgba(253, 246, 232, 0.568);
+}
+
+button {
+    all: unset;
+}
