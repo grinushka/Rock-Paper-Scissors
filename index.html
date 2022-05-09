@@ -6,17 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors</title>
     <script src="script.js" defer></script>
-    <link rel="stylesheet" href="style-reset.css"/>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-reset.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="buttons">
-      <button id="rock">Rock</button>
-      <button id="paper">Paper</button>
-      <button id="scissors">Scissors</button>
+      <button id="rock"><img src="/rock.svg" alt="" /></button>
+      <button id="paper"><img src="/paper.svg" alt="" /></button>
+      <button id="scissors"><img src="/scissors.svg" alt="" /></button>
     </div>
-    <h3>Results:</h3>
-    <div class="result"></div>
-    <div class="winner"></div>
+
+    <div class="game-result">
+      <p>Round result:</p>
+      <div class="result"></div>
+    </div>
+    <div class="game-winner">
+      <p>Winner is...</p>
+      <div class="winner"></div>
+    </div>
   </body>
 </html>

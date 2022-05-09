@@ -52,7 +52,7 @@ const computerPlus = function () {
   winner();
 };
 
-const draw = function() {
+const draw = function () {
   result.textContent += "Draw!";
   winner();
 };
@@ -68,22 +68,22 @@ const backToZero = function () {
 function playRound(playerSelection, computerSelection) {
   if (playerSelection == "rock" && computerSelection == "scissors") {
     result.textContent += "You win! Rock beats Paper.";
-    playerPlus()
+    playerPlus();
   } else if (playerSelection == "scissors" && computerSelection == "rock") {
     result.textContent += "You lose! Rock beats Paper.";
-    computerPlus()
+    computerPlus();
   } else if (playerSelection == "paper" && computerSelection == "scissors") {
     result.textContent += "You lose! Scissors beat Paper.";
-    computerPlus()
+    computerPlus();
   } else if (playerSelection == "scissors" && computerSelection == "paper") {
     result.textContent += "You win! Scissors beat Paper.";
-    playerPlus()
+    playerPlus();
   } else if (playerSelection == "rock" && computerSelection == "paper") {
     result.textContent += "You lose! Paper beats Rock.";
     computerPlus();
   } else if (playerSelection == "paper" && computerSelection == "rock") {
     result.textContent += "You win! Paper beats Rock.";
-    playerPlus()
+    playerPlus();
   } else if (playerSelection == "paper" && computerSelection == "paper") {
     draw();
   } else if (playerSelection == "scissors" && computerSelection == "scissors") {
@@ -119,4 +119,5 @@ buttonThree.addEventListener("click", () => {
 //     let computerSelection = computerPlay();
 //     console.log(playerSelection, computerSelection);
 //     playRound(playerSelection, computerSelection);
-//   }};
+//   }
+// }
